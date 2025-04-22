@@ -16,7 +16,6 @@ on:
 
 jobs:
   build-dev:
-
     runs-on: ubuntu-latest
     enviroment:
       name: dev  
@@ -33,7 +32,6 @@ jobs:
       run: mvn -B compile --file pom.xml
 
 build-hmg:
-
     runs-on: ubuntu-latest
     enviroment:
       name: hmg  
@@ -51,7 +49,6 @@ build-hmg:
       run: mvn -B test --file pom.xml
 
 build-prd:
-
     runs-on: ubuntu-latest
     enviroment:
       name: prd
@@ -65,15 +62,14 @@ build-prd:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      name: Empacota o projeto com Maven
-      run: mvn -B package --file pom.xml
-      name: Crie uma pasta temporária de downloads de artefatos
-      run: mkdir staging
-      name: Copia os artefatos a serem publicados na pasta temporária
-      run: cp target/*jar-with-dependencies.jar staging
-      name: Usa Upload Artifact do GitHub Action
-      uses: actions/upload-artifact@v4
-      with:
-      name: Package
-      path: staging
+    - name: Empacota o projeto com Maven
+    run: mvn -B package --file pom.xml -DskipTests
+  -  name: Crie uma pasta temporária de downloads de artefatos
+   run: mkdir staging
+- name: Copia os artefatos a serem publicados na pasta temporária
+  run: cp target/*jar-with-dependencies.jar staging
+-  name: Usa Upload Artifact do GitHub Action
+   uses: actions/upload-artifact@v4
+   with:
+    name: Package
+    path: staging
