@@ -12,7 +12,7 @@ class CalculadoraTest {
     
 @Test
     void testGetSOMA(){
-        Calculadora calculadora = new Calculadora(4.0, 2.0);
+        Calculadora calculadora = new Calculadora(4.0, 20.0);
         double retornoEsperado = 6.0;
         double retornoFeito = calculadora.getSoma();
         assertEquals(retornoEsperado, retornoFeito, 0);
