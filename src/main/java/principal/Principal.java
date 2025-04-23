@@ -3,7 +3,7 @@ package Principal;
 import Calculadora.Calculadora;
 import javax.swing.JOptionPane;
 
-public class CalculadoraCI{
+public class Principal{
 
     public static void main(String[] args) {
         String opcao = "";
