@@ -4,10 +4,6 @@ import calculadora.Calculadora;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- *
- * @author 1072410296
- */
 class CalculadoraTest {
     
 @Test

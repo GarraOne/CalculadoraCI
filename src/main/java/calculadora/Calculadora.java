@@ -35,8 +35,7 @@ public class Calculadora {
     }
 
     public double getDiferenca() {
-        return (getValorA()
-                - getValorB());
+        return (getValorA() - getValorB());
     }
 
     public double getProduto() {
@@ -46,8 +45,8 @@ public class Calculadora {
     public double getQuociente() {
         return (getValorA() / getValorB());
     }
-
-    public double getEsponecial() {
+    
+    public double getExponencial() {
         return (Math.pow(getValorA(), getValorB()));
     }
 }
