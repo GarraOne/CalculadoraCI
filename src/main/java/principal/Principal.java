@@ -1,4 +1,4 @@
-package Principal;
+package principal;
 
 import Calculadora.Calculadora;
 import javax.swing.JOptionPane;
