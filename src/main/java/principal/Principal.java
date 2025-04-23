@@ -1,6 +1,6 @@
 package principal;
 
-import Calculadora.Calculadora;
+import calculadora.Calculadora;
 import javax.swing.JOptionPane;
 
 public class Principal{
