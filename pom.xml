@@ -21,7 +21,7 @@
                 <version>0.8.12</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/principal/*Calculadora.*</exclude>
+                        <exclude>**/principal/*Principal.*</exclude>
                     </excludes>
                 </configuration>
                 <executions>
