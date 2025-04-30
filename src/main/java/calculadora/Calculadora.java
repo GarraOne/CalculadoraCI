@@ -50,7 +50,8 @@ public class Calculadora {
         return (Math.pow(getValorA(), getValorB()));
     }
     public double getFatorial () {
-        double a = getValorA(),fatorial = a;
+        double a = getValorA();
+        double fatorial = a;
         while(a > 1){
             a--;
             fatorial *= a;
