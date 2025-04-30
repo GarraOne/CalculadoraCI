@@ -8,7 +8,7 @@ public class Principal {
     public static void main(String[] args) {
         String opcao = "";
         Calculadora calculadora = new Calculadora();
-        while (true) {
+        while (!opcao.equals("9")) {
             opcao = JOptionPane.showInputDialog("1 - Leitura \n2 - Adicao\n3 - Subtracao \n4 - Multiplicação \n5 - Divisao \n6 - Exponencial \n9 - Sair");
             switch (Integer.parseInt(opcao)) {
                 case 1:
@@ -31,7 +31,7 @@ public class Principal {
                     JOptionPane.showMessageDialog(null, "Exponencial: " + calculadora.getExponencial());
                     break;
                 case 9:
-                    System.exit(0);
+                    JOptionPane.showMessageDialog(null, "Saindo...");
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Favor selecionar um numero dentro do padrão");
