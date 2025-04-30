@@ -49,4 +49,12 @@ public class Calculadora {
     public double getExponencial() {
         return (Math.pow(getValorA(), getValorB()));
     }
+    public double getFatorial () {
+        double a = getValorA(),fatorial = a;
+        while(a > 1){
+            a--;
+            fatorial *= a;
+        }
+        return (fatorial);
+    }
 }
